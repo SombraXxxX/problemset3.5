@@ -21,7 +21,7 @@ public class ProblemSet3_5 {
 		
 		// test your solutions here
 		
-		ps.primes(1, 1000);
+		ps.primes(1, 10);
 	}
 	
 	/**
@@ -36,7 +36,18 @@ public class ProblemSet3_5 {
 	 */
 	
 	public void primes(int start, int end) {
-		
+		int count = 0;
+		for(int i = start; i <= end; i++) {
+			if(i == 0 || i == 1) {
+	
+			}	
+			if(i == 2 || i == 3) {
+				prime = prime + 1;
+			} else if((i * i -1) % 24 == 0) {
+				prime = prime + 1;
+		}
+		}
+		System.out.println("There is " + prime + " prime numbers.");
 	}
 	
 	/**
